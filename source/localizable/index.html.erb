@@ -1,0 +1,68 @@
+---
+title:
+  en: Alex Chaplinsky
+  ru: Алекс Чаплинский
+---
+<div class="splash">
+  <div class="background"></div>
+  <div class="wrapper">
+    <%= partial 'partials/header' %>
+    <div class="moto">
+      <p><%= I18n.t(:role) %></p>
+      <h1><%= I18n.t(:moto) %></h1>
+      <div class="social">
+        <a href="https://www.youtube.com/c/alexChaplinsky" class="icon-youtube" target="_blank"></a>
+        <a href="https://www.instagram.com/alchaplinsky" class="icon-instagram" target="_blank"></a>
+        <a href="https://www.facebook.com/alexchaplinsky" class="icon-facebook" target="_blank"></a>
+      </div>
+    </div>
+    <a href="#main" class="down">
+      <%= image_tag 'down-chevron.svg'%>
+    </a>
+  </div>
+</div>
+<section class="section" id="main">
+  <h2><%= I18n.t(:header_one) %></h2>
+  <div class="content-wrapper row">
+    <div class="col1of2">
+      <%= image_tag 'about1.jpg', alt: I18n.t(:name), title: I18n.t(:name) %>
+    </div>
+    <div class="col1of2">
+      <%= I18n.t(:intro) %>
+      <br />
+      <a href="https://www.youtube.com/channel/UCoI8hLJndOYsNwk0NUQN0OQ?sub_confirmation=1" class="button" target="_blank"><%= I18n.t(:subscribe)%></a>
+    </div>
+  </div>
+</section>
+<section class="image-section">
+  <div class="content-wrapper">
+    <h2><%= I18n.t(:quote)%></h2>
+    <p><i>– <%= I18n.t(:author)%></i></p>
+  </div>
+</section>
+<section class="section" id="medium">
+  <h2><%= I18n.t(:header_two)%></h2>
+  <div class="content-wrapper">
+    <div class="citation">
+      <%= I18n.t(:about_channel) %>
+    </div>
+    <div class="row">
+      <div class="col1of3">
+        <%= image_tag 'content/travel.jpg', alt: I18n.t(:name), title: I18n.t(:name) %>
+        <h4><%= I18n.t(:travel)%></h4>
+      </div>
+      <div class="col1of3">
+        <%= image_tag 'content/videography.jpg', alt: I18n.t(:name), title: I18n.t(:name) %>
+        <h4><%= I18n.t(:video)%></h4>
+      </div>
+      <div class="col1of3">
+        <%= image_tag 'content/lifestyle.jpg', alt: I18n.t(:name), title: I18n.t(:name) %>
+        <h4><%= I18n.t(:lifestyle)%></h4>
+      </div>
+    </div>
+  </div>
+  <br /><br /><br />
+  <div class="content-wrapper" style="text-align: center;">
+    <a href="https://www.youtube.com/channel/UCoI8hLJndOYsNwk0NUQN0OQ?sub_confirmation=1" class="button" target="_blank"><%= I18n.t(:join)%></a>
+  </div>
+</section>
