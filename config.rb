@@ -15,6 +15,11 @@ page '/*.txt', layout: false
 
 activate :i18n
 
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-91455305-6'
+  ga.domain_name = 'alchaplinsky.com'
+end
+
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 
