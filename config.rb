@@ -39,11 +39,11 @@ end
 # https://middlemanapp.com/basics/helper-methods/
 
 helpers do
-  def page_title(page)
-    return page.data.title.send(I18n.locale) if
-      page.data.title.is_a?(Hash) && page.data.title[I18n.locale]
-    return page.data.title if page.data.title
-    return "Alex Chaplinsky"
+  def meta_data(page, name)
+    data = page.data.send(name)
+    return data.send(I18n.locale) if data.is_a?(Hash) && data[I18n.locale]
+    return data if data
+    return nil
   end
 end
 
