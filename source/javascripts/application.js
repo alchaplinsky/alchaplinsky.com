@@ -3,7 +3,8 @@ $(function() {
     $('.mobile-menu').toggleClass('is-visible')
   })
   $('.down').on('click', function(event) {
+    event.preventDefault()
     var selector = $(event.currentTarget).attr('href')
-    $('body').animate({scrollTop: $(selector).offset().top}, 500)
+    $('html, body').animate({scrollTop: $('#main').offset().top}, 500)
   })
 })
