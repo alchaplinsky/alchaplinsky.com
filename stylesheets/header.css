@@ -39,8 +39,8 @@
   font-size: 13px;
   padding: 0 10px; }
 
-.navigation li:nth-child(4):after,
-.navigation li:nth-child(5):after {
+.navigation li:nth-child(5):after,
+.navigation li:nth-child(6):after {
   content: ''; }
 
 .navigation li a {
@@ -70,7 +70,7 @@
   -webkit-transition: background .2s ease;
   transition: background .2s ease; }
 
-@media (max-width: 767px) {
+@media (max-width: 854px) {
   .navigation-toggle {
     display: block;
     float: right;

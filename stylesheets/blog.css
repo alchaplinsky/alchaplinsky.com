@@ -1,0 +1,35 @@
+.blog {
+  max-width: 860px;
+  padding: 0 20px;
+  margin: 40px auto;
+  line-height: 1.6;
+  font-size: 18px; }
+
+.blog h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  text-shadow: none; }
+
+.blog h2 {
+  font-size: 28px; }
+
+.blog p + h2 {
+  margin-top: 50px; }
+
+.blog .back {
+  margin-bottom: 20px;
+  font-size: 14px; }
+
+.blog .post {
+  margin-bottom: 50px; }
+  .blog .post h1 {
+    font-size: 32px; }
+    .blog .post h1 a, .blog .post h1 time {
+      display: block; }
+    .blog .post h1 a {
+      text-decoration: none;
+      color: #333; }
+    .blog .post h1 time {
+      font-size: 14px; }
+  .blog .post .summary h1 {
+    display: none; }
