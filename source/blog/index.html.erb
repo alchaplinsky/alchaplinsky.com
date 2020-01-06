@@ -1,0 +1,16 @@
+<%= partial 'partials/header' %>
+
+<div class="content blog">
+  <% blog.articles[0...5].each do |article| %>
+    <article class="post">
+      <h1>
+        <a href="<%= article.url %>"><%= article.title %></a>
+        <time><%= article.date.strftime('%b %e %Y') %></time>
+      </h1>
+      <div class="summary">
+        <%= article.summary %>
+      </div>
+      <a href="<%= article.url %>">Читать далее</a>
+    </article>
+  <% end %>
+</div>

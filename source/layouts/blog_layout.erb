@@ -22,7 +22,16 @@
     </script>
   </head>
   <body>
-    <%= yield %>
-    <%= partial 'partials/footer' %>  
+    <%= partial 'partials/header' %>
+    <div class="blog">
+      <div class="back">
+        <a href="/blog"> &larr; Назад к списку</a>
+      </div>
+      <%= yield %>
+      <div class="back">
+        <a href="/blog"> &larr; Назад к списку</a>
+      </div>
+    </div>
+    <%= partial 'partials/footer' %>
   </body>
 </html>

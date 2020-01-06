@@ -20,6 +20,13 @@ activate :google_analytics do |ga|
   ga.domain_name = 'alchaplinsky.com'
 end
 
+activate :blog do |blog|
+  blog.prefix = 'blog'
+  blog.layout = 'blog_layout'
+end
+
+activate :directory_indexes
+
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 
