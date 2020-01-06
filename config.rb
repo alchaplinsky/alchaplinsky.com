@@ -25,7 +25,6 @@ activate :blog do |blog|
   blog.layout = 'blog_layout'
 end
 
-activate :directory_indexes
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
