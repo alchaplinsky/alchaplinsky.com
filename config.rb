@@ -13,6 +13,10 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+proxy 'cooperation', 'localizable/redirect.html', layout: false, locals: {
+  destination: 'https://www.notion.so/alchaplinsky/073616d09694488ea2386dcbe3eaa6d7'
+}, ignore: true
+
 activate :i18n
 
 activate :google_analytics do |ga|
